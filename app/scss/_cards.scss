@@ -1,0 +1,72 @@
+.services {
+	margin-top: 30px;
+	@media screen and (min-width: $breakpoint-md) {
+		margin-top: 60px;
+	}
+
+	&__link {
+		text-decoration: none;
+			color: $regular-color;
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: 1px;
+		
+			&:hover {
+				color: $accent-color;
+			}
+	}
+
+	&__tittle {
+		padding-top: 10px;
+			font-weight: 700;
+			font-size: 30px;
+			line-height: 37px;
+		
+			@media (-webkit-min-device-pixel-ratio:0) {
+		
+				background-color: $text-color;
+				background-image: $gradient-text;
+					-webkit-background-clip: text;
+					-webkit-text-fill-color:transparent;
+				-webkit-background-clip: text;
+			}
+	}
+}
+
+.cards {
+			display: flex; 
+			flex-flow: wrap;
+			gap: 60px;
+		// .cards__card
+
+		&__card {
+			flex: 1 1 30%;
+		}
+
+		// .cards__card-icon
+
+		&__card-icon {
+			width: 92px;
+			height: 92px;
+			margin: 30px 0;
+		}
+
+		// .cards__card-tittle
+
+		&__card-tittle {
+			font-size: 22px;
+			font-weight: 700;
+			line-height: 27px;
+			color: $regular-color;
+			margin-bottom: 15px;
+		}
+
+		// .cards__card-content
+
+		&__card-content {
+			font-size: 16px;
+			line-height: 26px;
+			color: #ffffff;
+		}
+}

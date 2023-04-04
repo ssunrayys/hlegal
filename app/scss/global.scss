@@ -1,0 +1,67 @@
+body {
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+.container {
+    padding: 0 30px;
+    
+    @media screen and (min-width: $breakpoint-md) {
+            max-width: 708px;
+            margin: 0 auto;
+        }
+    
+    @media screen and (min-width: $breakpoint-lg) {
+            max-width: 964px;
+        }
+    @media screen and (min-width: $breakpoint-xl) {
+            max-width: 1380px;
+        }
+    @media screen and (min-width: $breakpoint-xxl) {
+            max-width: 1660px;
+        }
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+}
+
+.wrapper {
+    background: $gradient-supersoft;
+    border-radius: 0px 0px 12px 12px;
+    padding-bottom: 60px;
+    position: relative;
+    &::before {
+        content:'';
+        position: absolute;
+        height: 10px;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        background-color: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+
+    }
+        &::after {
+            content: '';
+            position: absolute;
+            height: 10px;
+            bottom: -20px;
+            left: 40px;
+            right: 40px;
+            background-color: #E7E7F2;
+            border-radius: 0px 0px 12px 12px;
+    
+        }
+
+}
+
+.hidden {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+}

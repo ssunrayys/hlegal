@@ -1,0 +1,139 @@
+.team {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+        @media screen and (min-width: $breakpoint-md) {
+            padding-top: 80px;
+        }
+    
+        @media screen and (min-width: $breakpoint-lg) {
+            padding: 60px auto;
+        }
+
+    &__swiper { 
+    }
+
+    // .team__slide
+
+    &__slide {
+        border-radius: 12px;
+        overflow: hidden;
+        @media screen and (min-width: $breakpoint-lg) {
+            display: flex;
+        }
+    }
+
+    // .team__image
+
+    &__image {
+        height: 500px;
+        position: relative;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @media screen and (min-width: $breakpoint-lg) {
+                height: auto;
+                flex: 1 0 400px;
+            }
+                @media screen and (min-width: $breakpoint-xl) {
+                    // height: 344px;
+                    width: 400px;
+                }
+        @media screen and (min-width: $breakpoint-xxl) {
+            // height: 298px;
+            width: 400px;
+        }
+
+    }
+
+    // .team__inner
+
+    &__inner {
+        background-color: $bg_color;
+        padding: 30px;
+    }
+
+    // .team__inner-link
+
+    &__inner-link {
+        font-size: 14px;
+        font-weight: 700;
+        color: $regular-color;
+        text-transform: uppercase;
+        text-decoration: none;
+        line-height: 17px;
+        // margin-bottom: 20px;
+    }
+
+    // .team__inner-tittle
+
+    &__inner-tittle {
+        padding-top: 5px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 46px;
+        background: $gradient-text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 30px;
+        @media screen and (min-width: $breakpoint-md) {
+            font-size: 38px;
+        }
+    }
+    
+    &__inner-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $text-color;
+        p {
+            margin-bottom: 6px;
+        }
+        p+p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+
+    &__swiper-pagination {
+    
+    }
+
+}
+
+.swiper {
+    padding-bottom: 30px;
+}
+
+.swiper-slide {}
+
+.swipper-wrapper {}
+
+.team .swiper-pagination {
+    position: absolute;
+        left: 0;
+        bottom: 0;
+        text-align: center;
+        transition: .3s opacity;
+        transform: translate3d(0, 0, 0);
+        z-index: 10;
+}
+
+.swiper-pagination-bullet {
+        width: 16px;
+        height: 16px; 
+    }
+
+.team .swiper-pagination-bullet-active {
+            background: $regular-color;
+        }
+
+
+ 

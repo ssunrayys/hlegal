@@ -1,0 +1,119 @@
+.clients {
+
+		// .clients__block
+
+		&__block {
+			padding-top: 60px;
+			@media screen and (min-width: $breakpoint-xxl) {
+				padding-bottom: 60px;
+			}
+		}
+
+		// .clients__tittle
+
+		&__tittle {
+			padding-bottom: 30px;
+		}
+
+		// .clients__tittle-name
+
+		&__tittle-name {
+			font-size: 14px;
+			line-height: 17px;
+			font-weight: 700;
+			color: $main-color;
+			text-transform: uppercase;
+			text-align: center;
+		}
+
+		// .clients__block-container
+
+		&__block-container {
+		}
+
+		// .clients__cards
+
+		&__cards {
+			display: flex;
+			flex-flow: column;
+			@media screen and (min-width: $breakpoint-md) {
+			flex-flow: wrap;
+			justify-content: center;
+			align-items: center;
+			}
+		}
+
+		// .clients__company
+
+		&__company {
+			width: 100%;
+			height: 120px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			@media screen and (min-width: $breakpoint-md) {
+				width: 256px;
+				height: 120px;
+			}
+			@media screen and (min-width: $breakpoint-xl) {
+			    width: 360px;
+				height: 120px;
+			}
+		        @media screen and (min-width: $breakpoint-xxl) {
+		        	width: 430px;
+		        	height: 120px;
+		        }
+		}
+
+		// .clients__picture
+
+		&__picture {
+		}
+}
+.container {
+}
+
+.hillel {
+	background-color: #1C4280;
+}
+.wannabiz {
+	background-color:#143646;
+}
+.targerine {
+	background: linear-gradient(0deg, #F48B30, #F48B30),
+		#F48B30;
+}
+.dlook {
+	background-color: #9E4DC3;
+}
+.orangear {
+	background-color: #FD9339;
+}
+.adtel {
+	background-color: #E2E2E4;
+}
+.clickky {
+	background-color: #C71C36;
+}
+.eco {
+	background-color: #DCF3F9;
+}
+.ingratek {
+	background-color: #EAEAEA;
+}
+.city {
+	background-color: #282240;
+}
+.artprint {
+	background-color: #1D4568;
+}
+.ultimate {
+	background-color: #000000;
+}
+
+.clickky, .eco, .ingratek, .city, .artprint, .ultimate {
+	display: none;
+	@media screen and (min-width: $breakpoint-md) {
+		display: flex;
+	}
+}
